@@ -32,6 +32,8 @@ public class Main {
         System.out.println("--------------------------");
         System.out.println("Son2 copies name and age of Son1");
         Son son2Copy = new Son(son1, EyeColor.GREEN, occupation3);
+        System.out.println(son1.getInfo());
+        System.out.println("--------------------------");
         System.out.println(son2Copy.getInfo());
 
     }
