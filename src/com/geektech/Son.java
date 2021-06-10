@@ -7,9 +7,15 @@ public final class Son extends Father {
         super(name, age, eyeColor, occupation);
     }
 
+    // ДЗ на сообразительность
+    // конструктор клонирования имени и возраста
+    public Son(Son copy, EyeColor eyeColor, Occupation occupation) {
+        this(copy.getName(), copy.getAge(), eyeColor, occupation);
+    }
+
     // перезапись метода родителя
     @Override
-    public void phycicalAbility(int number, String exercise) {
+    public void physicalAbility(int number, String exercise) {
         System.out.println(getName() + " can " + exercise + " " + number + " times" +
                 " and also sings very well");
     }

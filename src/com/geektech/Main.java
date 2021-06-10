@@ -10,7 +10,8 @@ public class Main {
 
         Father father = new Father("Father", 55, EyeColor.BLUE, occupation1);
         Son son1 = new Son("John", 33, EyeColor.BROWN, occupation2);
-        Son son2 = new Son("Jack", 29, EyeColor.BLUE, occupation3);
+        Son son2 = new Son("Jack", 29, EyeColor.GREEN, occupation3);
+
 
         System.out.println(father.getInfo());
         System.out.println("--------------------------");
@@ -19,11 +20,19 @@ public class Main {
         System.out.println(son2.getInfo());
         System.out.println("--------------------------");
 
-        father.phycicalAbility(40,"make push-ups");
-        father.phycicalAbility("make pull-ups", 30);
-        son1.phycicalAbility(50, "jump");
-        son1.phycicalAbility("make muscle-ups", 25);
-        son2.phycicalAbility(60, "make squats");
-        son2.phycicalAbility("make dips", 45);
+        father.physicalAbility(40, "make push-ups");
+        father.physicalAbility("make pull-ups", 30);
+        son1.physicalAbility(50, "jump");
+        son1.physicalAbility("make muscle-ups", 25);
+        son2.physicalAbility(60, "make squats");
+        son2.physicalAbility("make dips", 45);
+
+        // ДЗ на сообразительность
+        // Копируем во второго брата имя и возраст первого брата
+        System.out.println("--------------------------");
+        System.out.println("Son2 copies name and age of Son1");
+        Son son2Copy = new Son(son1, EyeColor.GREEN, occupation3);
+        System.out.println(son2Copy.getInfo());
+
     }
 }

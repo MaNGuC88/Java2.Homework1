@@ -8,12 +8,12 @@ public class Father extends Grandfather {
     }
 
     // перегрузка методов
-    public void phycicalAbility(int number, String exercise) {
+    public void physicalAbility(int number, String exercise) {
         System.out.println(getName() + " can " + exercise + " " + number + " times");
     }
 
     // неперезаписываемый метод
-    public final void phycicalAbility(String exercise, int number) {
+    public final void physicalAbility(String exercise, int number) {
         System.out.println(getName() + " can " + exercise + " " + number + " times");
     }
 
